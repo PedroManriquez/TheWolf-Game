@@ -15,4 +15,6 @@ Assembly-UnityScript-Editor.unityproj
 obj/
 Assets/*.meta
 Assets/**/*.meta
+Assets/**/**/*.meta
+Assets/**/**/**/*.meta
 TheWolf.userprefs
