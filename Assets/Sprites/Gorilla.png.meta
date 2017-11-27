@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 381ec35ae530a0240b2b228df5737455
-timeCreated: 1511756647
+timeCreated: 1511808125
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -267,39 +267,39 @@ TextureImporter:
       name: Gorilla_10
       rect:
         serializedVersion: 2
-        x: 36
-        y: 1014
-        width: 257
-        height: 292
+        x: 0
+        y: 1012
+        width: 302
+        height: 316
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 99, y: 0, z: 113, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: Gorilla_11
       rect:
         serializedVersion: 2
-        x: 304
+        x: 307
         y: 1014
         width: 309
         height: 296
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 102, y: 0, z: 104, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: Gorilla_12
       rect:
         serializedVersion: 2
-        x: 622
-        y: 1012
-        width: 280
-        height: 298
+        x: 609
+        y: 1016
+        width: 293
+        height: 300
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 100, y: 0, z: 99, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -312,20 +312,20 @@ TextureImporter:
         height: 298
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 111, y: 0, z: 109, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: Gorilla_14
       rect:
         serializedVersion: 2
-        x: 1236
-        y: 1012
-        width: 320
+        x: 1238
+        y: 1016
+        width: 321
         height: 300
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 123, y: 0, z: 85, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -358,9 +358,9 @@ TextureImporter:
       name: Gorilla_17
       rect:
         serializedVersion: 2
-        x: 520
+        x: 484
         y: 700
-        width: 269
+        width: 305
         height: 248
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -371,9 +371,9 @@ TextureImporter:
       name: Gorilla_18
       rect:
         serializedVersion: 2
-        x: 820
+        x: 795
         y: 700
-        width: 305
+        width: 330
         height: 248
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -397,7 +397,7 @@ TextureImporter:
       name: Gorilla_20
       rect:
         serializedVersion: 2
-        x: 1578
+        x: 1576
         y: 699
         width: 309
         height: 297
@@ -423,8 +423,8 @@ TextureImporter:
       name: Gorilla_22
       rect:
         serializedVersion: 2
-        x: 296
-        y: 372
+        x: 297
+        y: 373
         width: 313
         height: 256
       alignment: 7
@@ -436,10 +436,10 @@ TextureImporter:
       name: Gorilla_23
       rect:
         serializedVersion: 2
-        x: 632
-        y: 376
-        width: 318
-        height: 260
+        x: 612
+        y: 377
+        width: 373
+        height: 259
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: Gorilla_24
       rect:
         serializedVersion: 2
-        x: 987
-        y: 376
-        width: 343
-        height: 272
+        x: 956
+        y: 371
+        width: 392
+        height: 277
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
