@@ -17,4 +17,10 @@ Assets/*.meta
 Assets/**/*.meta
 Assets/**/**/*.meta
 Assets/**/**/**/*.meta
+Assets/**/**/**/**/*.meta
+Assets/**/**/**/**/**/*.meta
+!Assets/Sprites/*.meta
+!Assets/Sprites/**/*.meta
+!Assets/Sprites/**/**/*.meta
+!Assets/Sprites/**/**/**/*.meta
 TheWolf.userprefs
