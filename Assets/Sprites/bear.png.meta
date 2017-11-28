@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 462cfa7e45ff81941be62fd7091dbae9
-timeCreated: 1511756269
+timeCreated: 1511836228
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -297,7 +297,7 @@ TextureImporter:
         height: 282
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 79, y: 0, z: 78, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -310,7 +310,7 @@ TextureImporter:
         height: 282
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 62, y: 0, z: 69, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -330,65 +330,65 @@ TextureImporter:
       name: bear_14
       rect:
         serializedVersion: 2
-        x: 675
-        y: 727
-        width: 228
+        x: 672
+        y: 728
+        width: 231
         height: 272
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 81, y: 0, z: 86, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: bear_15
       rect:
         serializedVersion: 2
-        x: 912
+        x: 908
         y: 727
-        width: 274
+        width: 279
         height: 268
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 17, y: 0, z: 200, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: bear_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 727
-        width: 192
+        x: 0
+        y: 728
+        width: 224
         height: 175
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 79, y: 0, z: 77, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: bear_17
       rect:
         serializedVersion: 2
-        x: 1196
+        x: 1194
         y: 727
-        width: 258
+        width: 260
         height: 137
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 14, y: 0, z: 198, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: bear_18
       rect:
         serializedVersion: 2
-        x: 1464
+        x: 1461
         y: 727
-        width: 259
+        width: 262
         height: 137
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 13, y: 0, z: 199, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -427,7 +427,7 @@ TextureImporter:
         height: 208
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 101, y: 0, z: 117, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -435,34 +435,34 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 682
-        y: 483
+        y: 484
         width: 289
         height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 96, y: 0, z: 104, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: bear_23
       rect:
         serializedVersion: 2
-        x: 989
+        x: 986
         y: 483
-        width: 193
+        width: 196
         height: 175
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 31, y: 0, z: 96, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: bear_24
       rect:
         serializedVersion: 2
-        x: 1219
+        x: 1216
         y: 497
-        width: 180
+        width: 184
         height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -473,9 +473,9 @@ TextureImporter:
       name: bear_25
       rect:
         serializedVersion: 2
-        x: 1404
+        x: 1402
         y: 497
-        width: 180
+        width: 182
         height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -486,9 +486,9 @@ TextureImporter:
       name: bear_26
       rect:
         serializedVersion: 2
-        x: 1588
+        x: 1587
         y: 497
-        width: 178
+        width: 181
         height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -500,7 +500,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 257
+        y: 258
         width: 208
         height: 170
       alignment: 7
