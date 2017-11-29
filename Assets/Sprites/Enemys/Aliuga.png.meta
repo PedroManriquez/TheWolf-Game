@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: b3894b69005832c42949b0e372125dac
+timeCreated: 1511926138
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: aquilamon_0
+    21300002: aquilamon_1
+    21300004: aquilamon_2
+    21300006: aquilamon_3
+    21300008: aquilamon_4
+    21300010: aquilamon_5
+    21300012: aquilamon_6
+    21300014: aquilamon_7
+    21300016: aquilamon_8
+    21300018: aquilamon_9
+    21300020: aquilamon_10
+    21300022: aquilamon_11
+    21300024: aquilamon_12
+    21300026: aquilamon_13
+    21300028: aquilamon_14
+    21300030: aquilamon_15
+    21300032: aquilamon_16
+    21300034: aquilamon_17
+    21300036: aquilamon_18
+    21300038: aquilamon_19
+    21300040: aquilamon_20
+    21300042: aquilamon_21
+    21300044: aquilamon_22
+    21300046: aquilamon_23
+    21300048: aquilamon_24
+    21300050: aquilamon_25
+    21300052: aquilamon_26
+    21300054: aquilamon_27
+    21300056: aquilamon_28
+    21300058: aquilamon_29
+    21300060: aquilamon_30
+    21300062: aquilamon_31
+    21300064: aquilamon_32
+    21300066: aquilamon_33
+    21300068: aquilamon_34
+    21300070: aquilamon_35
+    21300072: aquilamon_36
+    21300074: aquilamon_37
+    21300076: aquilamon_38
+    21300078: aquilamon_39
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aquilamon_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1489
+        width: 211
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1460
+        width: 225
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_2
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1464
+        width: 256
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_3
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1476
+        width: 254
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_4
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1454
+        width: 225
+        height: 185
+      alignment: 9
+      pivot: {x: 0.48700845, y: -0.019422563}
+      border: {x: 0, y: 33, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1472
+        width: 256
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_6
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 1428
+        width: 9
+        height: 216
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_7
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1476
+        width: 191
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1232
+        width: 217
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1224
+        width: 229
+        height: 176
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_10
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1224
+        width: 268
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_11
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1232
+        width: 265
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_12
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1196
+        width: 220
+        height: 163
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_13
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1236
+        width: 254
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 976
+        width: 164
+        height: 143
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 980
+        width: 228
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 662
+        width: 248
+        height: 138
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_17
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 652
+        width: 217
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 648
+        width: 181
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_19
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 660
+        width: 181
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_20
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 670
+        width: 233
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_21
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 715
+        width: 25
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_22
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 699
+        width: 36
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_23
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 651
+        width: 339
+        height: 169
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_24
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 670
+        width: 49
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_25
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 660
+        width: 57
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 356
+        width: 224
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_27
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 357
+        width: 221
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_28
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 356
+        width: 220
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_29
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 487
+        width: 32
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_30
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 356
+        width: 221
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_31
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 356
+        width: 220
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_32
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 55
+        width: 200
+        height: 167
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_33
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 202
+        width: 29
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_34
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 216
+        width: 25
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_35
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 55
+        width: 191
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_36
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 55
+        width: 188
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 55
+        width: 200
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_38
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 55
+        width: 200
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: aquilamon_39
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 51
+        width: 200
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
