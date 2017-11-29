@@ -23,4 +23,6 @@ Assets/**/**/**/**/**/*.meta
 !Assets/Sprites/**/*.meta
 !Assets/Sprites/**/**/*.meta
 !Assets/Sprites/**/**/**/*.meta
+!Assets/Prefabs/*.meta
+!Assets/Prefabs/**/*.meta
 TheWolf.userprefs
