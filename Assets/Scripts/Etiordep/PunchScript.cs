@@ -21,6 +21,7 @@ public class PunchScript : MonoBehaviour {
 			isPunch = true;
 			GetComponent<Animator> ().SetBool ("isPunch", true);
 		}
+
 		if (Input.GetKeyUp(KeyCode.J)) {
 			if(isPunch)
 				punchSound.Stop ();

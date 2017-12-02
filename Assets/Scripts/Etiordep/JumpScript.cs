@@ -15,7 +15,7 @@ public class JumpScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.W) && !jump) {
 			jump = true;
-			transform.Translate (0, 1f, 0);
+			transform.Translate (0, 1.5f, 0);
 			GetComponent<Animator> ().SetBool ("isJumping", true);
 		}
 
