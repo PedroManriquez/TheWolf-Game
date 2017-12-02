@@ -31,4 +31,5 @@ public class WalkScript : MonoBehaviour {
 			GetComponent<Animator> ().SetBool ("isWalking", false);
 		}
 	}
+
 }

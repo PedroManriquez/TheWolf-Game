@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class JumpScript : MonoBehaviour {
 	public bool jump = false;
+	private Rigidbody2D rigi2D;
+
 	// Use this for initialization
 	void Start () {
 
