@@ -1,15 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\MenuController.cs">
-    <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\Scripts\Menu\MenuController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\CanvasMenuController.cs" Line="1" Column="1" />
-=======
-      <File FileName="Assets\Scripts\Menu\MenuController.cs" Line="25" Column="1" />
->>>>>>> aea965a6405d83bb2d2038f4145c834d8a24e3ae
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
