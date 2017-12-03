@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class XPunchScript : MonoBehaviour {
+	public AudioSource punchSound;
+
+	private bool isPunch = false;
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetKey(KeyCode.Delete)) {
+			if(!isPunch)
+				punchSound.Play ();
+
+			isPunch = true;
+			GetComponent<Animator> ().SetBool ("isPunch", true);
+		}
+
+		if (Input.GetKeyUp(KeyCode.Delete)) {
+			if(isPunch)
+				punchSound.Stop ();
+			
+			isPunch = false;
+			GetComponent<Animator> ().SetBool ("isPunch", false);
+		}
+	}
+}
