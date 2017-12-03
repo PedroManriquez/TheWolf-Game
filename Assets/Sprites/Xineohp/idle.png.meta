@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 760f0229ea11ae444b9c2187aa8d7619
-timeCreated: 1512268679
+timeCreated: 1512320788
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -32,7 +32,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -79,6 +79,38 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -86,9 +118,9 @@ TextureImporter:
       name: idle_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 21
         y: 70
-        width: 480
+        width: 482
         height: 428
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -99,10 +131,10 @@ TextureImporter:
       name: idle_1
       rect:
         serializedVersion: 2
-        x: 611
+        x: 610
         y: 70
-        width: 482
-        height: 420
+        width: 483
+        height: 421
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,9 +145,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1208
-        y: 69
-        width: 481
-        height: 423
+        y: 68
+        width: 482
+        height: 424
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,10 +157,10 @@ TextureImporter:
       name: idle_3
       rect:
         serializedVersion: 2
-        x: 1803
-        y: 72
-        width: 481
-        height: 426
+        x: 1802
+        y: 71
+        width: 482
+        height: 427
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,10 +170,10 @@ TextureImporter:
       name: idle_4
       rect:
         serializedVersion: 2
-        x: 2401
-        y: 72
-        width: 482
-        height: 427
+        x: 2400
+        y: 71
+        width: 483
+        height: 429
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

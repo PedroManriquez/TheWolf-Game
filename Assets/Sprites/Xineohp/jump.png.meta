@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8dd7f27ae7c890f4288cfbf22034f123
-timeCreated: 1512268659
+timeCreated: 1512320806
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -39,7 +39,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -86,6 +86,38 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -93,10 +125,10 @@ TextureImporter:
       name: jump_0
       rect:
         serializedVersion: 2
-        x: 1226
-        y: 47
-        width: 457
-        height: 497
+        x: 1225
+        y: 46
+        width: 459
+        height: 499
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,10 +138,10 @@ TextureImporter:
       name: jump_1
       rect:
         serializedVersion: 2
-        x: 1823
-        y: 47
-        width: 457
-        height: 497
+        x: 1822
+        y: 46
+        width: 460
+        height: 499
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,10 +151,10 @@ TextureImporter:
       name: jump_2
       rect:
         serializedVersion: 2
-        x: 2426
-        y: 47
+        x: 2425
+        y: 46
         width: 462
-        height: 497
+        height: 499
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,10 +164,10 @@ TextureImporter:
       name: jump_3
       rect:
         serializedVersion: 2
-        x: 2747
-        y: 541
-        width: 5
-        height: 5
+        x: 2746
+        y: 540
+        width: 7
+        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +177,10 @@ TextureImporter:
       name: jump_4
       rect:
         serializedVersion: 2
-        x: 3026
-        y: 47
+        x: 3025
+        y: 46
         width: 462
-        height: 497
+        height: 499
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +190,10 @@ TextureImporter:
       name: jump_5
       rect:
         serializedVersion: 2
-        x: 23
-        y: 47
-        width: 486
-        height: 452
+        x: 22
+        y: 46
+        width: 488
+        height: 454
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +203,10 @@ TextureImporter:
       name: jump_6
       rect:
         serializedVersion: 2
-        x: 623
-        y: 47
-        width: 476
-        height: 464
+        x: 622
+        y: 46
+        width: 478
+        height: 466
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +216,10 @@ TextureImporter:
       name: jump_7
       rect:
         serializedVersion: 2
-        x: 1221
-        y: 394
-        width: 5
-        height: 4
+        x: 1220
+        y: 393
+        width: 7
+        height: 6
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +229,10 @@ TextureImporter:
       name: jump_8
       rect:
         serializedVersion: 2
-        x: 1819
-        y: 394
-        width: 4
-        height: 4
+        x: 1818
+        y: 393
+        width: 7
+        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +242,10 @@ TextureImporter:
       name: jump_9
       rect:
         serializedVersion: 2
-        x: 3021
-        y: 394
-        width: 5
-        height: 4
+        x: 3020
+        y: 393
+        width: 7
+        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +255,10 @@ TextureImporter:
       name: jump_10
       rect:
         serializedVersion: 2
-        x: 3619
-        y: 47
-        width: 478
-        height: 462
+        x: 3618
+        y: 46
+        width: 480
+        height: 464
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +268,10 @@ TextureImporter:
       name: jump_11
       rect:
         serializedVersion: 2
-        x: 4223
-        y: 47
-        width: 486
-        height: 452
+        x: 4222
+        y: 46
+        width: 488
+        height: 454
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

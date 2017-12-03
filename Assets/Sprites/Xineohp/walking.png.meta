@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7c626b78a4dfce947b52b2043fc0d42a
-timeCreated: 1512268702
+timeCreated: 1512320842
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,7 +35,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -82,6 +82,38 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -90,9 +122,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 47
-        width: 487
-        height: 450
+        y: 46
+        width: 488
+        height: 452
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 619
-        y: 59
-        width: 478
-        height: 438
+        y: 57
+        width: 479
+        height: 441
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,9 +148,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1219
-        y: 56
-        width: 485
-        height: 441
+        y: 55
+        width: 486
+        height: 443
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,9 +161,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1819
-        y: 54
-        width: 487
-        height: 443
+        y: 53
+        width: 488
+        height: 445
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +173,10 @@ TextureImporter:
       name: walking_4
       rect:
         serializedVersion: 2
-        x: 2426
-        y: 56
-        width: 483
-        height: 441
+        x: 2425
+        y: 55
+        width: 485
+        height: 443
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +186,10 @@ TextureImporter:
       name: walking_5
       rect:
         serializedVersion: 2
-        x: 3023
-        y: 66
-        width: 483
-        height: 431
+        x: 3022
+        y: 65
+        width: 485
+        height: 433
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +199,10 @@ TextureImporter:
       name: walking_6
       rect:
         serializedVersion: 2
-        x: 3623
-        y: 56
-        width: 483
-        height: 441
+        x: 3622
+        y: 55
+        width: 485
+        height: 443
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,9 +213,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4219
-        y: 47
-        width: 487
-        height: 450
+        y: 46
+        width: 488
+        height: 452
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
