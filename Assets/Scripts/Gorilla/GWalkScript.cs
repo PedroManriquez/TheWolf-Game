@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GWalkScript : MonoBehaviour {
 
@@ -21,7 +22,9 @@ public class GWalkScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-
+		if (energy <= 0) {
+			StartCoroutine( WaitAndLoadScene ( 1f, 2) );
+		}
 		anim.SetBool ("isWalking", false);
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 6f) {
@@ -68,10 +71,17 @@ public class GWalkScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
-			energy = energy - 100;
+			energy -= 500;
 			if (energy == 0) {
-				Destroy (gameObject);
+				anim.SetBool("isDie", true);
+				Destroy (gameObject, 1f);
 			}
 		}
+	}
+	IEnumerator WaitAndLoadScene(float num, int scene)
+	{
+		//Debug.Log ("Wait? " + num);
+		yield return new WaitForSeconds (num);
+		SceneManager.LoadScene (scene);
 	}
 }
