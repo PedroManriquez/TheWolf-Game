@@ -44,4 +44,5 @@ public class MenuController : MonoBehaviour
 		yield return new WaitForSeconds (num);
 		SceneManager.LoadScene (scene);
 	}
+
 }
