@@ -17,7 +17,9 @@ public class EtiordepController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (energy < 0 && lives < 0) {
+			GameManager.instance.Die();
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
@@ -30,7 +32,6 @@ public class EtiordepController : MonoBehaviour {
 				energy = 100;
 				--lives;
 			}
-				
 			//saludText.text = "Salud: " + salud;
 		}
 	}
