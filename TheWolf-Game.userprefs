@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Etiordep/EtiordepController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIs/EtiordepUIController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Xineohp/XJumpScript.cs" Line="8" Column="28" />
-      <File FileName="Assets/Scripts/Xineohp/XPunchScript.cs" Line="25" Column="36" />
+      <File FileName="Assets/Scripts/Xineohp/XJumpScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Xineohp/XPunchScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Xineohp/XWalkScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UIs/XineohpUIController.cs" Line="62" Column="4" />
-      <File FileName="Assets/Scripts/UIs/EtiordepUIController.cs" Line="61" Column="10" />
-      <File FileName="Assets/Scripts/Xineohp/XineohpController.cs" Line="20" Column="50" />
-      <File FileName="Assets/Scripts/Etiordep/EtiordepController.cs" Line="24" Column="50" />
+      <File FileName="Assets/Scripts/UIs/XineohpUIController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIs/EtiordepUIController.cs" Line="32" Column="13" />
+      <File FileName="Assets/Scripts/Xineohp/XineohpController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Etiordep/EtiordepController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Etiordep/JumpScript.cs" Line="1" Column="1" />
     </Files>
