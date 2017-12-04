@@ -15,4 +15,16 @@ public class XineohpController : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.tag == "Enemy") {
+			energy = energy - 1;
+			if (energy == 0) {
+				energy = 100;
+				--lives;
+			}
+
+			//saludText.text = "Salud: " + salud;
+		}
+	}
 }

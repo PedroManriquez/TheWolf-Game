@@ -7,8 +7,8 @@ public class EtiordepController : MonoBehaviour {
 	public int lives = 3;
 	public int energy = 100;
 
-	private int salud = 10;
-	public Text saludText;
+	//private int salud = 10;
+	//public Text saludText;
 
 	// Use this for initialization
 	void Start () {
@@ -22,8 +22,13 @@ public class EtiordepController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Enemy") {
-			salud = salud - 1;
-			saludText.text = "Salud: " + salud;
+			energy = energy - 1;
+			if (energy == 0) {
+				energy = 100;
+				--lives;
+			}
+				
+			//saludText.text = "Salud: " + salud;
 		}
 	}
 }
