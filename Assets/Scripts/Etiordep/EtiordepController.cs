@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EtiordepController : MonoBehaviour {
+	public int lives = 3;
+	public int energy = 100;
 
-	private int salud = 10;
-	public Text saludText;
+	//private int salud = 10;
+	//public Text saludText;
 
 	// Use this for initialization
 	void Start () {
-		saludText.text = "Salud: " + salud;
+		//saludText.text = "Salud: " + salud;
 	}
 	
 	// Update is called once per frame
@@ -19,9 +21,17 @@ public class EtiordepController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
-		if (col.gameObject.tag == "Enemy") {
-			salud = salud - 1;
-			saludText.text = "Salud: " + salud;
+		if (col.gameObject.tag == "Enemy" && lives >= 0) {
+
+			if(energy != 0)
+				energy = energy - 10;
+
+			if (energy == 0  && lives > 0) {
+				energy = 100;
+				--lives;
+			}
+				
+			//saludText.text = "Salud: " + salud;
 		}
 	}
 }
