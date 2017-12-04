@@ -47,36 +47,38 @@ public class EnemyFollow : MonoBehaviour {
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f && live) {
 			if (twoPlayers) {
 				if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
-					Player = Player1;		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 3.5f && live) {
+					Player = Player1;
+					if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 3.5f && live) {
 
+					} else {
+						Player = Player2;
+					}
 				} else {
-					Player = Player2;
+					Player = Player1;
 				}
-			} else {
-				Player = Player1;
-			}
-			anim.SetBool ("isWalk", true);
-			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
+				anim.SetBool ("isWalk", true);
+				transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
 
-			if (transform.position.x > Player.transform.position.x) {
-				GetComponent<SpriteRenderer> ().flipX = true;
-			} else {
-				GetComponent<SpriteRenderer> ().flipX = false;
-			}
-
-		} else if (live) {
-
-			if (transform.position.x != startingPositionX.x) {
-				if (transform.position.x > startingPositionX.x) {
+				if (transform.position.x > Player.transform.position.x) {
 					GetComponent<SpriteRenderer> ().flipX = true;
 				} else {
 					GetComponent<SpriteRenderer> ().flipX = false;
 				}
-				anim.SetBool ("isWalk", true);
-				transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * 2 * Time.deltaTime);
-			} else {
-				GetComponent<SpriteRenderer> ().flipX = true;
-				anim.SetBool ("isWalk", false);
+
+			} else if (live) {
+
+				if (transform.position.x != startingPositionX.x) {
+					if (transform.position.x > startingPositionX.x) {
+						GetComponent<SpriteRenderer> ().flipX = true;
+					} else {
+						GetComponent<SpriteRenderer> ().flipX = false;
+					}
+					anim.SetBool ("isWalk", true);
+					transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * 2 * Time.deltaTime);
+				} else {
+					GetComponent<SpriteRenderer> ().flipX = true;
+					anim.SetBool ("isWalk", false);
+				}
 			}
 		}
 	}
