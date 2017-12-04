@@ -1,16 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIs/EtiordepUIController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Sitnam\EnemyFollow.cs">
     <Files>
-      <File FileName="Assets/Scripts/Xineohp/XJumpScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Xineohp/XPunchScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Xineohp/XWalkScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UIs/XineohpUIController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UIs/EtiordepUIController.cs" Line="32" Column="13" />
-      <File FileName="Assets/Scripts/Xineohp/XineohpController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Etiordep/EtiordepController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Etiordep/JumpScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Sitnam\EnemyFollow.cs" Line="83" Column="2" />
+      <File FileName="Assets\Scripts\Aliuga\AliugaBehaviourScript.cs" Line="41" Column="4" />
+      <File FileName="Assets\Scripts\Gorilla\GWalkScript.cs" Line="42" Column="4" />
+      <File FileName="Assets\Scripts\Nogard\NogardBehaviourScript.cs" Line="41" Column="4" />
+      <File FileName="Assets\Scripts\Noel\NoelBehaviourScript.cs" Line="39" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
