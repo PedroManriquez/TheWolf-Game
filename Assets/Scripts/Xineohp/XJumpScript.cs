@@ -5,7 +5,7 @@ using UnityEngine;
 public class XJumpScript : MonoBehaviour {
 	public bool jump = false;
 	private Rigidbody2D rigi2D;
-	public float jumpForce = 300f;
+	public float jumpForce = 800f;
 	// Use this for initialization
 	void Start () {
 		rigi2D = GetComponent<Rigidbody2D> ();
