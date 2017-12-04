@@ -17,9 +17,12 @@ public class XineohpController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
-		if (col.gameObject.tag == "Enemy") {
-			energy = energy - 10;
-			if (energy == 0) {
+		if (col.gameObject.tag == "Enemy" && lives >= 0) {
+
+			if(energy != 0)
+				energy = energy - 10;
+
+			if (energy == 0 && lives > 0) {
 				energy = 60;
 				--lives;
 			}

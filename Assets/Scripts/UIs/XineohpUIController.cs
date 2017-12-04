@@ -53,10 +53,12 @@ public class XineohpUIController : MonoBehaviour {
 	{
 		RectTransform auxImg = energy.GetComponent<RectTransform> ();
 
-		if (xine.energy < 100 && xine.energy >= 1) {
-			energy.GetComponent<RectTransform>().sizeDelta = new Vector2( (xine.energy * (lengthHealth/100)), auxImg.rect.height);
-		} else {
-			energy.GetComponent<RectTransform>().sizeDelta = new Vector2(lengthHealth, auxImg.rect.height);
+		if (xine.energy < 60 && xine.energy >= 1) {
+			energy.GetComponent<RectTransform> ().sizeDelta = new Vector2 ((xine.energy * (lengthHealth / 60)), auxImg.rect.height);
+		} else if (xine.lives > 0) {
+			energy.GetComponent<RectTransform> ().sizeDelta = new Vector2 (lengthHealth, auxImg.rect.height);
+		} else if (xine.lives == 0) {
+			energy.GetComponent<RectTransform> ().sizeDelta = new Vector2 (0, auxImg.rect.height);
 		}
 	}
 }

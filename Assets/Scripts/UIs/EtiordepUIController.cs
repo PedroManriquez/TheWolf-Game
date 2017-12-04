@@ -55,8 +55,10 @@ public class EtiordepUIController : MonoBehaviour {
 
 		if (etio.energy < 100 && etio.energy >= 1) {
 			energy.GetComponent<RectTransform>().sizeDelta = new Vector2( (etio.energy * (lengthHealth/100)), auxImg.rect.height);
-		} else {
+		} else if (etio.lives > 0){
 			energy.GetComponent<RectTransform>().sizeDelta = new Vector2(lengthHealth, auxImg.rect.height);
+		} else if (etio.lives == 0) {
+			energy.GetComponent<RectTransform> ().sizeDelta = new Vector2 (0, auxImg.rect.height);
 		}
 	}
 }
