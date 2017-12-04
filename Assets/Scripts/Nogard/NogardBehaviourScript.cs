@@ -14,6 +14,7 @@ public class NogardBehaviourScript : MonoBehaviour {
 
 	public int lives = 1;
 	public int energy = 120;
+	public bool live;
 
 	void Start () {
 		Player1 = GameObject.Find ("Etiordep");
@@ -25,6 +26,7 @@ public class NogardBehaviourScript : MonoBehaviour {
 		}
 		startingPositionX = transform.position;
 		anim = GetComponent<Animator> ();
+		live = true;
 	}
 
 	void FixedUpdate () {
@@ -42,9 +44,9 @@ public class NogardBehaviourScript : MonoBehaviour {
 
 		anim.SetBool ("isWalking", false);
 
-		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f) {
+		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f && live) {
 
-			if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 2f) {
+			if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 2f && live) {
 				isPunching = true;
 				anim.SetBool ("isPunching", isPunching);
 			} else {
@@ -67,7 +69,7 @@ public class NogardBehaviourScript : MonoBehaviour {
 
 		} else {
 
-			if (Mathf.Abs(transform.position.x - startingPositionX.x)>1) {
+			if (Mathf.Abs(transform.position.x - startingPositionX.x) > 1 && live) {
 				anim.SetBool ("isWalking", true);
 
 				if (transform.position.x > startingPositionX.x) {
@@ -87,8 +89,9 @@ public class NogardBehaviourScript : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
 			energy = energy - 25;
-			if (energy == 0) {
-				Destroy (gameObject);
+			if (energy <= 0) {
+				anim.SetBool("isDie", true);
+				Destroy (gameObject, 1f);
 			}
 		}
 	}
