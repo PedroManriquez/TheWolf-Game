@@ -9,6 +9,7 @@ public class GWalkScript : MonoBehaviour {
 	private GameObject Player, Player1, Player2;
 	private Vector3 startingPositionX;
 	private Animator anim;
+	private bool twoPlayers;
 
 	private bool isPunching = false;
 
@@ -17,17 +18,27 @@ public class GWalkScript : MonoBehaviour {
 
 	void Start () {
 		Player1 = GameObject.Find ("Etiordep");
-		Player2 = GameObject.Find ("Xineohp");
+		if (GameObject.Find ("Xineohp") != null) {
+			Player2 = GameObject.Find ("Xineohp");
+			twoPlayers = true;
+		} else {
+			twoPlayers = false;
+		}
 		startingPositionX = transform.position;
 		anim = GetComponent<Animator> ();
 	}
 
 	void FixedUpdate () {
 
-		if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
-			Player = Player1;
+		if (twoPlayers) {
+
+			if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+				Player = Player1;
+			} else {
+				Player = Player2;
+			}
 		} else {
-			Player = Player2;
+			Player = Player1;
 		}
 
 		anim.SetBool ("isWalking", false);
