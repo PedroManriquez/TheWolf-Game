@@ -12,7 +12,7 @@ public class EtiordepController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		saludText.text = "Salud: " + salud;
+		//saludText.text = "Salud: " + salud;
 	}
 	
 	// Update is called once per frame

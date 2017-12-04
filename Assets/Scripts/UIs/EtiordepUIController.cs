@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EtiordepUIController : MonoBehaviour {
 	private EtiordepController etio;
@@ -10,14 +11,20 @@ public class EtiordepUIController : MonoBehaviour {
 	public GameObject live2;
 	public GameObject live3;
 
+	public GameObject energy;
+
+	private float lengthHealth;
+
 	// Use this for initialization
 	void Start () {
 		etio = etiordep.GetComponent<EtiordepController> ();
+		lengthHealth = energy.GetComponent<RectTransform>().rect.width;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		LifeUpdate ();
+		EnergyUpdate ();
 	}
 
 	void LifeUpdate ()
@@ -44,6 +51,12 @@ public class EtiordepUIController : MonoBehaviour {
 
 	void EnergyUpdate ()
 	{
+		RectTransform auxImg = energy.GetComponent<RectTransform> ();
 
+		if (etio.energy < 100 && etio.energy >= 1) {
+			energy.GetComponent<RectTransform>().sizeDelta = new Vector2( (etio.energy * (lengthHealth/100)), auxImg.rect.height);
+		} else {
+			energy.GetComponent<RectTransform>().sizeDelta = new Vector2(lengthHealth, auxImg.rect.height);
+		}
 	}
 }
