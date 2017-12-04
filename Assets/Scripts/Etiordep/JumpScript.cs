@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class JumpScript : MonoBehaviour {
 	public bool jump = false;
+	public float jumpForce = 300f;
 	private Rigidbody2D rigi2D;
 
 	// Use this for initialization
 	void Start () {
-
+		rigi2D = GetComponent<Rigidbody2D> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.W) && !jump) {
 			jump = true;
-			transform.Translate (0, 1.5f, 0);
+			rigi2D.AddForce (new Vector2 (0f, jumpForce));
 			GetComponent<Animator> ().SetBool ("isJumping", true);
 		}
 
