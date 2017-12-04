@@ -4,30 +4,48 @@ using UnityEngine;
 
 public class GWalkScript : MonoBehaviour {
 
-	// Use this for initialization
+	public float enemySpeed = 1.2f;
+	private GameObject Player;
+	private Vector3 startingPositionX;
+	private Animator anim;
+
 	void Start () {
-		
+		Player = GameObject.Find ("Etiordep");
+		startingPositionX = transform.position;
+		anim = GetComponent<Animator> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		if (Input.GetKey("left")) {
-			if (GetComponent<SpriteRenderer>().flipX == false) {
-				GetComponent<SpriteRenderer>().flipX = true;
+
+		anim.SetBool ("isWalking", false);
+
+		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 6f) {
+
+			anim.SetBool ("isWalking", true);
+
+			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
+
+			if (transform.position.x > Player.transform.position.x) {
+				GetComponent<SpriteRenderer> ().flipX = true;
+			} else {
+				GetComponent<SpriteRenderer> ().flipX = false;
 			}
-			GetComponent<Animator>().SetBool ("isWalking", true);
-			transform.Translate (-0.05f, 0, 0);
-		}
-		if (Input.GetKey("right")) {
-			if (GetComponent<SpriteRenderer>().flipX == true) {
-				GetComponent<SpriteRenderer>().flipX = false;
+
+		} else {
+
+			if (Mathf.Abs(transform.position.x - startingPositionX.x)>1) {
+				anim.SetBool ("isWalking", true);
+
+				if (transform.position.x > startingPositionX.x) {
+					GetComponent<SpriteRenderer> ().flipX = true;
+				} else {
+					GetComponent<SpriteRenderer> ().flipX = false;
+				}
+
+				transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * 2 * Time.deltaTime);
+			} else {
+				anim.SetBool ("isWalking", false);
 			}
-			GetComponent<Animator> ().SetBool ("isWalking", true);
-			transform.Translate (0.05f, 0, 0);
-		}
-		// Disabled animator
-		if (Input.GetKeyUp("right") || Input.GetKeyUp("left")) {
-			GetComponent<Animator> ().SetBool ("isWalking", false);
 		}
 	}
 }
