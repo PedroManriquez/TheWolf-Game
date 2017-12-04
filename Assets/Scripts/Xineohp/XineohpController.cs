@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EtiordepController : MonoBehaviour {
+public class XineohpController : MonoBehaviour {
 	public int lives = 3;
 	public int energy = 100;
 
