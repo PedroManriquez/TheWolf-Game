@@ -6,20 +6,26 @@ public class EnemyFollow : MonoBehaviour {
 
 	public float enemySpeed = 0.5f;
 	private GameObject Player;
-	private Rigidbody2D rigi2D;
+	private Vector3 startingPositionX;
 
 	void Start () {
 		Player = GameObject.Find ("Etiordep");
-		rigi2D = GetComponent<Rigidbody2D> ();
+		startingPositionX = transform.position;
 	}
 
 	void Update () {
-		transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
 
-		if (transform.position.x > Player.transform.position.x) {
-			GetComponent<SpriteRenderer> ().flipX = true;
+		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 5f) {
+
+			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
+
+			if (transform.position.x > Player.transform.position.x) {
+				GetComponent<SpriteRenderer> ().flipX = true;
+			} else {
+				GetComponent<SpriteRenderer> ().flipX = false;
+			}
 		} else {
-			GetComponent<SpriteRenderer> ().flipX = false;
+			transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * Time.deltaTime);
 		}
 	}
 
