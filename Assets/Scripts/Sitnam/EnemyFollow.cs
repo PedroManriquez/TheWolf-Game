@@ -10,21 +10,34 @@ public class EnemyFollow : MonoBehaviour {
 	private GameObject Player1;
 	private GameObject Player2;
 
+	private bool twoPlayers;
+
 	public int lives = 1;
 	public int energy = 100;
 
 	void Start () {
+		
 		Player1 = GameObject.Find ("Etiordep");
-		Player2 = GameObject.Find ("Xineohp");
+		if (GameObject.Find ("Xineohp") != null) {
+			Player2 = GameObject.Find ("Xineohp");
+			twoPlayers = true;
+		} else {
+			twoPlayers = false;
+		}
 		startingPositionX = transform.position;
 	}
 
 	void FixedUpdate () {
 
-		if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
-			Player = Player1;
+		if (twoPlayers) {
+
+			if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+				Player = Player1;
+			} else {
+				Player = Player2;
+			}
 		} else {
-			Player = Player2;
+			Player = Player1;
 		}
 
 
