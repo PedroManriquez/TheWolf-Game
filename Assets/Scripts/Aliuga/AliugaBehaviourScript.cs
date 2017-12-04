@@ -5,8 +5,9 @@ using UnityEngine;
 public class AliugaBehaviourScript : MonoBehaviour {
 
 	public float enemySpeed = 1.2f;
-	private GameObject Player;
+	private GameObject Player, Player1, Player2;
 	private Vector3 startingPositionX;
+	private bool twoPlayers;
 
 	public int lives = 1;
 	public int energy = 150;
@@ -14,7 +15,13 @@ public class AliugaBehaviourScript : MonoBehaviour {
 	private bool live;
 	private bool isQuiet;
 	void Start () {
-		Player = GameObject.Find ("Etiordep");
+		Player1 = GameObject.Find ("Etiordep");
+		if (GameObject.Find ("Xineohp") != null) {
+			Player2 = GameObject.Find ("Xineohp");
+			twoPlayers = true;
+		} else {
+			twoPlayers = false;
+		}
 		startingPositionX = transform.position;
 		anim = GetComponent<Animator> ();
 		live = true;
@@ -22,6 +29,17 @@ public class AliugaBehaviourScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
+		if (twoPlayers) {
+
+			if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+				Player = Player1;
+			} else {
+				Player = Player2;
+			}
+		} else {
+			Player = Player1;
+		}
+
 		if (isQuiet) {
 			anim.SetBool("isFly", false);
 		}

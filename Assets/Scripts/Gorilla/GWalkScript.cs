@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class GWalkScript : MonoBehaviour {
 
 	public float enemySpeed = 1.2f;
-	private GameObject Player;
+	private GameObject Player, Player1, Player2;
 	private Vector3 startingPositionX;
 	private Animator anim;
+	private bool twoPlayers;
 
 	private bool isPunching = false;
 
@@ -16,12 +17,30 @@ public class GWalkScript : MonoBehaviour {
 	public int energy = 1000;
 
 	void Start () {
-		Player = GameObject.Find ("Etiordep");
+		Player1 = GameObject.Find ("Etiordep");
+		if (GameObject.Find ("Xineohp") != null) {
+			Player2 = GameObject.Find ("Xineohp");
+			twoPlayers = true;
+		} else {
+			twoPlayers = false;
+		}
 		startingPositionX = transform.position;
 		anim = GetComponent<Animator> ();
 	}
 
 	void FixedUpdate () {
+
+		if (twoPlayers) {
+
+			if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+				Player = Player1;
+			} else {
+				Player = Player2;
+			}
+		} else {
+			Player = Player1;
+		}
+
 		anim.SetBool ("isWalking", false);
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 6f) {

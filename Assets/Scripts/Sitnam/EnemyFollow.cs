@@ -8,6 +8,10 @@ public class EnemyFollow : MonoBehaviour {
 	private GameObject Player;
 	private Vector3 startingPositionX;
 	private bool isPunching = false;
+	private GameObject Player1;
+	private GameObject Player2;
+
+	private bool twoPlayers;
 
 	public int lives = 1;
 	public int energy = 100;
@@ -18,9 +22,17 @@ public class EnemyFollow : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 	void Start () {
-		Player = GameObject.Find ("Etiordep");
-		startingPositionX = transform.position;
 		live = true;
+		Player1 = GameObject.Find ("Etiordep");
+		if (GameObject.Find ("Xineohp") != null) {
+			Player2 = GameObject.Find ("Xineohp");
+			Player = Player1;
+			twoPlayers = true;
+		} else {
+			twoPlayers = false;
+		}
+		startingPositionX = transform.position;
+		
 	}
 
 	void FixedUpdate () {
@@ -33,7 +45,16 @@ public class EnemyFollow : MonoBehaviour {
 		}
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f && live) {
+			if (twoPlayers) {
+				if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+					Player = Player1;		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 3.5f && live) {
 
+				} else {
+					Player = Player2;
+				}
+			} else {
+				Player = Player1;
+			}
 			anim.SetBool ("isWalk", true);
 			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
 
