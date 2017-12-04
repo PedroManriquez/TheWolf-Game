@@ -31,20 +31,20 @@ public class XineohpUIController : MonoBehaviour {
 	{
 		if (xine.lives < 3) {
 			live3.SetActive (false);
-		} else {
+		} else if(xine.lives >= 3){
 			live3.SetActive (true);
 		}
 
 		if (xine.lives < 2) {
 			live2.SetActive (false);
-		} else {
+		} else if(xine.lives >= 2){
 			live2.SetActive (true);
 		}
 
 		if (xine.lives < 1) {
 			live1.SetActive (false);
-		} else {
-			live2.SetActive (true);
+		} else if(xine.lives >= 1) {
+			live1.SetActive (true);
 		}
 			
 	}

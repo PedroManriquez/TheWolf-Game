@@ -31,20 +31,20 @@ public class EtiordepUIController : MonoBehaviour {
 	{
 		if (etio.lives < 3) {
 			live3.SetActive (false);
-		} else {
+		} else if(etio.lives >= 3){
 			live3.SetActive (true);
 		}
 
 		if (etio.lives < 2) {
 			live2.SetActive (false);
-		} else {
+		} else if(etio.lives >= 2){
 			live2.SetActive (true);
 		}
 
 		if (etio.lives < 1) {
 			live1.SetActive (false);
-		} else {
-			live2.SetActive (true);
+		} else if(etio.lives >= 1) {
+			live1.SetActive (true);
 		}
 
 	}
