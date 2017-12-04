@@ -10,7 +10,7 @@ public class XWalkScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (Input.GetKey(KeyCode.RightArrow)) {
 			if (GetComponent<SpriteRenderer>().flipX == true) {
 				GetComponent<SpriteRenderer>().flipX = false;

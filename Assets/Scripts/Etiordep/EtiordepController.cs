@@ -22,7 +22,7 @@ public class EtiordepController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Enemy") {
-			energy = energy - 1;
+			energy = energy - 10;
 			if (energy == 0) {
 				energy = 100;
 				--lives;
