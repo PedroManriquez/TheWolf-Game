@@ -11,6 +11,9 @@ public class GWalkScript : MonoBehaviour {
 
 	private bool isPunching = false;
 
+	public int lives = 1;
+	public int energy = 1000;
+
 	void Start () {
 		Player = GameObject.Find ("Etiordep");
 		startingPositionX = transform.position;
@@ -59,6 +62,15 @@ public class GWalkScript : MonoBehaviour {
 			} else {
 				anim.SetBool ("isWalking", false);
 				GetComponent<SpriteRenderer> ().flipX = true;
+			}
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.tag == "Player") {
+			energy = energy - 100;
+			if (energy == 0) {
+				Destroy (gameObject);
 			}
 		}
 	}

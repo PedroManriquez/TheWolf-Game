@@ -11,6 +11,9 @@ public class NogardBehaviourScript : MonoBehaviour {
 
 	private bool isPunching = false;
 
+	public int lives = 1;
+	public int energy = 120;
+
 	void Start () {
 		Player = GameObject.Find ("Etiordep");
 		startingPositionX = transform.position;
@@ -59,6 +62,15 @@ public class NogardBehaviourScript : MonoBehaviour {
 			} else {
 				anim.SetBool ("isWalking", false);
 				GetComponent<SpriteRenderer> ().flipX = true;
+			}
+		}
+	}
+	
+	void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.tag == "Player") {
+			energy = energy - 25;
+			if (energy == 0) {
+				Destroy (gameObject);
 			}
 		}
 	}

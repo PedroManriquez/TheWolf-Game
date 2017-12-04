@@ -8,6 +8,9 @@ public class EnemyFollow : MonoBehaviour {
 	private GameObject Player;
 	private Vector3 startingPositionX;
 
+	public int lives = 1;
+	public int energy = 100;
+
 	void Start () {
 		Player = GameObject.Find ("Etiordep");
 		startingPositionX = transform.position;
@@ -39,6 +42,15 @@ public class EnemyFollow : MonoBehaviour {
 				transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * 2 * Time.deltaTime);
 			} else {
 				GetComponent<SpriteRenderer> ().flipX = true;
+			}
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.tag == "Player") {
+			energy = energy - 25;
+			if (energy == 0) {
+				Destroy (gameObject);
 			}
 		}
 	}
