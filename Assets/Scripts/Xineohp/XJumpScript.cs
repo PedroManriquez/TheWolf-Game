@@ -5,17 +5,17 @@ using UnityEngine;
 public class XJumpScript : MonoBehaviour {
 	public bool jump = false;
 	private Rigidbody2D rigi2D;
-
+	public float jumpForce = 300f;
 	// Use this for initialization
 	void Start () {
-
+		rigi2D = GetComponent<Rigidbody2D> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.UpArrow) && !jump) {
 			jump = true;
-			transform.Translate (0, 1.5f, 0);
+			rigi2D.AddForce (new Vector2 (0f, jumpForce));
 			GetComponent<Animator> ().SetBool ("isJumping", true);
 		}
 
