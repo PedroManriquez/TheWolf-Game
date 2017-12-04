@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NogardBehaviourScript : MonoBehaviour {
+public class NoelBehaviourScript : MonoBehaviour {
 
 	public float enemySpeed = 1.2f;
 	private GameObject Player;
 	private Vector3 startingPositionX;
 	private Animator anim;
-
-	private bool isPunching = false;
 
 	void Start () {
 		Player = GameObject.Find ("Etiordep");
@@ -22,27 +20,16 @@ public class NogardBehaviourScript : MonoBehaviour {
 		anim.SetBool ("isWalking", false);
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f) {
+			anim.SetBool ("isWalking", true);
 
-			if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 2f) {
-				isPunching = true;
-				anim.SetBool ("isPunching", isPunching);
+			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
+
+			if (transform.position.x > Player.transform.position.x) {
+				GetComponent<SpriteRenderer> ().flipX = true;
 			} else {
-				isPunching = false;
-				anim.SetBool ("isPunching", isPunching);
+				GetComponent<SpriteRenderer> ().flipX = false;
 			}
-
-			if (!isPunching) {
-
-				anim.SetBool ("isWalking", true);
-
-				transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
-
-				if (transform.position.x > Player.transform.position.x) {
-					GetComponent<SpriteRenderer> ().flipX = true;
-				} else {
-					GetComponent<SpriteRenderer> ().flipX = false;
-				}
-			}
+			
 
 		} else {
 
