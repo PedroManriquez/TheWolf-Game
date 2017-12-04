@@ -9,6 +9,8 @@ public class GWalkScript : MonoBehaviour {
 	private Vector3 startingPositionX;
 	private Animator anim;
 
+	private bool isPunching = false;
+
 	void Start () {
 		Player = GameObject.Find ("Etiordep");
 		startingPositionX = transform.position;
@@ -21,14 +23,25 @@ public class GWalkScript : MonoBehaviour {
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 6f) {
 
-			anim.SetBool ("isWalking", true);
-
-			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
-
-			if (transform.position.x > Player.transform.position.x) {
-				GetComponent<SpriteRenderer> ().flipX = true;
+			if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 3.5f) {
+				isPunching = true;
+				anim.SetBool ("isPunching", isPunching);
 			} else {
-				GetComponent<SpriteRenderer> ().flipX = false;
+				isPunching = false;
+				anim.SetBool ("isPunching", isPunching);
+			}
+
+			if (!isPunching) {
+
+				anim.SetBool ("isWalking", true);
+
+				transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
+
+				if (transform.position.x > Player.transform.position.x) {
+					GetComponent<SpriteRenderer> ().flipX = true;
+				} else {
+					GetComponent<SpriteRenderer> ().flipX = false;
+				}
 			}
 
 		} else {
