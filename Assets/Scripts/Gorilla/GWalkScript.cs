@@ -15,7 +15,7 @@ public class GWalkScript : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 
-	void Update () {
+	void FixedUpdate () {
 
 		anim.SetBool ("isWalking", false);
 

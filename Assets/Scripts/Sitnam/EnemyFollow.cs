@@ -13,7 +13,7 @@ public class EnemyFollow : MonoBehaviour {
 		startingPositionX = transform.position;
 	}
 
-	void Update () {
+	void FixedUpdate () {
 
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f) {
