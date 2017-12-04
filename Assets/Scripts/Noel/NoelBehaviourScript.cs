@@ -5,7 +5,7 @@ using UnityEngine;
 public class NoelBehaviourScript : MonoBehaviour {
 
 	public float enemySpeed = 1.2f;
-	private GameObject Player;
+	private GameObject Player, Player1, Player2;
 	private Vector3 startingPositionX;
 	private Animator anim;
 
@@ -13,12 +13,20 @@ public class NoelBehaviourScript : MonoBehaviour {
 	public int energy = 90;
 
 	void Start () {
-		Player = GameObject.Find ("Etiordep");
+		Player1 = GameObject.Find ("Etiordep");
+		Player2 = GameObject.Find ("Xineohp");
 		startingPositionX = transform.position;
 		anim = GetComponent<Animator> ();
 	}
 
 	void FixedUpdate () {
+
+		if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+			Player = Player1;
+		} else {
+			Player = Player2;
+		}
+
 
 		anim.SetBool ("isWalking", false);
 

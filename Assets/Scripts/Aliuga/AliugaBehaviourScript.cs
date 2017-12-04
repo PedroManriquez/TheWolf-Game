@@ -5,7 +5,7 @@ using UnityEngine;
 public class AliugaBehaviourScript : MonoBehaviour {
 
 	public float enemySpeed = 1.2f;
-	private GameObject Player;
+	private GameObject Player, Player1, Player2;
 	private Vector3 startingPositionX;
 
 	public int lives = 1;
@@ -14,7 +14,8 @@ public class AliugaBehaviourScript : MonoBehaviour {
 	private bool live;
 	private bool isQuiet;
 	void Start () {
-		Player = GameObject.Find ("Etiordep");
+		Player1 = GameObject.Find ("Etiordep");
+		Player2 = GameObject.Find ("Xineohp");
 		startingPositionX = transform.position;
 		anim = GetComponent<Animator> ();
 		live = true;
@@ -22,6 +23,12 @@ public class AliugaBehaviourScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
+		if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+			Player = Player1;
+		} else {
+			Player = Player2;
+		}
+
 		if (isQuiet) {
 			anim.SetBool("isFly", false);
 		}

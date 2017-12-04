@@ -7,16 +7,25 @@ public class EnemyFollow : MonoBehaviour {
 	public float enemySpeed = 1.2f;
 	private GameObject Player;
 	private Vector3 startingPositionX;
+	private GameObject Player1;
+	private GameObject Player2;
 
 	public int lives = 1;
 	public int energy = 100;
 
 	void Start () {
-		Player = GameObject.Find ("Etiordep");
+		Player1 = GameObject.Find ("Etiordep");
+		Player2 = GameObject.Find ("Xineohp");
 		startingPositionX = transform.position;
 	}
 
 	void FixedUpdate () {
+
+		if (Mathf.Abs (transform.position.x - Player1.transform.position.x) < Mathf.Abs (transform.position.x - Player2.transform.position.x)) {
+			Player = Player1;
+		} else {
+			Player = Player2;
+		}
 
 
 		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 4f) {
