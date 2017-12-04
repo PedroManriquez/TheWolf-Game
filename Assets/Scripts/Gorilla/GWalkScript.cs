@@ -45,6 +45,7 @@ public class GWalkScript : MonoBehaviour {
 				transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * 2 * Time.deltaTime);
 			} else {
 				anim.SetBool ("isWalking", false);
+				GetComponent<SpriteRenderer> ().flipX = true;
 			}
 		}
 	}
