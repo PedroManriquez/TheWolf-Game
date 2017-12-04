@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour {
 
-	public Transform target;
 	public float enemySpeed = 0.5f;
+	private GameObject Player;
+	private Vector3 startingPositionX;
 
 	void Start () {
-		
+		Player = GameObject.Find ("Etiordep");
+		startingPositionX = transform.position;
 	}
 
 	void Update () {
-		
-		transform.position = Vector2.Lerp (transform.position, target.position, enemySpeed * Time.deltaTime);
+
+		if (Mathf.Abs (transform.position.x - Player.transform.position.x) < 5f) {
+
+			transform.position = Vector2.MoveTowards (transform.position, Player.transform.position, enemySpeed * Time.deltaTime);
+
+			if (transform.position.x > Player.transform.position.x) {
+				GetComponent<SpriteRenderer> ().flipX = true;
+			} else {
+				GetComponent<SpriteRenderer> ().flipX = false;
+			}
+		} else {
+			transform.position = Vector2.MoveTowards (transform.position, startingPositionX, enemySpeed * Time.deltaTime);
+		}
 	}
 
 }
