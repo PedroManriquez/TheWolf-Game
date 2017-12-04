@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class XineohpController : MonoBehaviour {
 	public int lives = 3;
-	public int energy = 100;
+	public int energy = 60;
 
 	// Use this for initialization
 	void Start () {
